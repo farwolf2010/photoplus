@@ -77,8 +77,8 @@ public class WXPhotoPlusModule extends WXModuleBase {
 
                         }
 
-                        if(param.containsKey("minSize")){
-                            String minSize=param.get("minSize")+"";
+                        if(param.containsKey("maxSize")){
+                            String minSize=param.get("maxSize")+"";
                             psm= psm.compress(true);
                             psm=psm.minimumCompressSize(Integer.parseInt(minSize));
                         }
